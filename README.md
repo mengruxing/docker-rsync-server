@@ -11,6 +11,6 @@ Reference:
 Start:
 -----
 
-    docker run  -d -v data:/data -p 10873:873 ninehills/docker-rsync-server
+    docker run  -d -v $PWD/data:/data -p 10873:873 ninehills/docker-rsync-server
     rsync -avP /a/v/p rsync://<docker_host>:10873/data
 
